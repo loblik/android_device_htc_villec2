@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),villec2)
 LOCAL_PATH:= $(call my-dir)
 
 ifeq ($(TARGET_PROVIDES_LIBLIGHTS),true)
@@ -36,3 +36,4 @@ include $(BUILD_SHARED_LIBRARY)
 endif # TARGET_BOARD_PLATFORM
 endif # TARGET_VENDOR
 endif # TARGET_PROVIDES_LIBLIGHT
+endif # Board is villec2
