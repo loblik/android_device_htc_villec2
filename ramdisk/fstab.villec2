@@ -2,7 +2,7 @@
 #<src>			<mnt_point>	<type>	<mnt_flags>						<fs_mgr_flags>
 # load these in early-init instead
 #/dev/block/mmcblk0p17	/vendor/firmware/misc	vfat	ro,shortname=lower				wait
-#/dev/block/mmcblk0p19	/vendor/firmware/adsp	vfat	ro,shortname=lower				wait
+#/dev/block/mmcblk0p19	/vendor/firmware/adsp	vfat	ro,shortname=lower,context=u:object_r:firmware_file:s0				wait
 
 
 /dev/block/mmcblk0p20	/boot		emmc	defaults						defaults
