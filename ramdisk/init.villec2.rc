@@ -215,16 +215,16 @@ service hciattach /system/bin/brcm_patchram_plus --enable_hci --no2bytes \
 #sdcard daemon
 service fuse_sdcard0 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard0 /storage/sdcard0
     class late_start
-    disabled
+    enabled
 
 service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk /storage/usbdisk
       class late_start
-      disabled
+      enabled
 
 service hdmid /system/bin/hdmid
     class main
     socket hdmid stream 0660 root system graphics
-    disabled
+    enabled
 
 service htcbatt /system/bin/htcbatt
     class main
@@ -237,7 +237,7 @@ service iprenew_wlan0 /system/bin/dhcpcd -n
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp --single_core_while_panel_off
     user root
-    disabled
+    enabled
 
 service netmgrd /system/bin/netmgrd
     class main
