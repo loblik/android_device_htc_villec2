@@ -123,8 +123,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y
 
-# We have enough space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
