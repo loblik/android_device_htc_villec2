@@ -173,3 +173,13 @@ SKIP_SET_METADATA := true
 
 # Misc
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
+
+# Enable dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+   ifeq ($(WITH_DEXPREOPT),)
+    WITH_DEXPREOPT := true
+   endif
+  endif
+endif
+DONT_DEXPREOPT_PREBUILTS := true
