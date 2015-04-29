@@ -68,15 +68,22 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
     libdivxdrmdecrypt \
-    libI420colorconvert \
     libmm-omxcore \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
     libOmxAacEnc \
     libOmxAmrEnc \
-    libstagefrighthw
+    libstagefrighthw \
+    libOmxQcelp13Enc \
+    libOmxEvrcEnc \
+    libOmxAmrEnc \
+    qcmediaplayer
+
+PRODUCT_BOOT_JARS += \
+    qcmediaplayer
 
 # HDMI
 PRODUCT_PACKAGES += \
