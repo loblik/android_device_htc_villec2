@@ -49,14 +49,10 @@ ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
 view.scroll_friction=0
 #
-# GooManger
-#
-ro.goo.developerid=dominos_liberty	
-ro.goo.rom=Coolrom
-#
 #### AUTO-ROTATE LOCKSCREEN ####
 # (uncomment below line to enable)
 #lockscreen.rot_override=true
 #
 #
-
+# USB-OTG
+persist.sys.isUsbOtgEnabled=true
