@@ -1,6 +1,6 @@
 ifeq ($(BOARD_VENDOR),htc)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
-
+ifeq ($(CAMERA_USES_SURFACEFLINGER_CLIENT_STUB),true)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
@@ -15,3 +15,4 @@ include $(BUILD_SHARED_LIBRARY)
 
 endif # TARGET_BOARD_PLATFORM
 endif # BOARD_VENDOR
+endif # Camera
